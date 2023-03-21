@@ -1,0 +1,47 @@
+
+.bandiera {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.striscia {
+  height: 33.33%;
+  width: 100%;
+  position: absolute;
+}
+
+.viola {
+  background-color: violet;
+  top: 0;
+}
+
+.red {
+  background-color: red;
+  top: 33.33%;
+}
+
+.blu {
+  background-color: violet;
+  top: 66.66%;
+}
+
+.stella {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  position: absolute;
+  top: 34%;
+  left: 25%;
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+}
+
+.stella2 {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  position: relative;
+  top: 34%;
+  left: 75%;
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+}
