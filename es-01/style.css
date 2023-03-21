@@ -1,0 +1,14 @@
+body{
+
+    background-color: beige; 
+}
+.wrapper {
+    margin: auto;
+    padding: 30px;
+    border: 1px solid red;
+}
+.flag{
+    margin: auto;
+    padding: 30px;
+    border: 1px solid blue;
+}
