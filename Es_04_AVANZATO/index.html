@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISOTOPE</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="Isotope.js"></script>
+</head>
+<body>
+  <div class="button-group filter-button-group">
+    <button data-filter="numberGreaterThan50">number > 50</button>
+<button data-filter="ium">name ends with -ium</button>
+    <button data-filter="*">show all</button>
+    <button data-filter=".metal">metal</button>
+    <button data-filter=".transition">transition</button>
+    <button data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</button>
+    <button data-filter=":not(.transition)">not transition</button>
+    <button data-filter=".metal:not(.transition)">metal but not transition</button>
+  </div>
+
+  <div class="grid">
+    <div class="element-item a"><p class="number">80</p></div>
+    <div class="element-item b"><p class="number">42</p></div>
+    <div class="element-item c"><p class="number">20</p></div>
+    <div class="element-item d"><p class="number">75</p></div>
+  
+  </div>
+
+	<div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid">
+    <div class="element-item transition metal" data-category="transion metal">a</div>
+    <div class="element-item post-transition metal">b</div>
+    <div class="element-item alkali metal">c</div>
+    <div class="element-item transition metal">d</div>
+    <div class="element-item lanthanoid metal inner-transition">e</div>
+    <div class="element-item halogen nonmetal">f</div>
+    <div class="element-item alkaline-earth metal">...</div>
+    ...
+  </div>
+</div>
+</body>
+</html>
